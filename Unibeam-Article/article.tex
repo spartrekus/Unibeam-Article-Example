@@ -1,0 +1,72 @@
+
+\documentclass[11pt]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{grffile}
+
+
+\graphicspath{{figs/}}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+\date{2017-Jun-25}
+\title{Study of Manuscript Creating Using Latex Word Processing }
+\usepackage{authblk}
+\author[1]{Author A\thanks{A.A@university.edu}}
+\author[1]{Author B\thanks{B.B@university.edu}}
+\author[1]{Author C\thanks{C.C@university.edu}}
+\author[2]{Author D\thanks{D.D@university.edu}}
+\author[2]{Author E\thanks{E.E@university.edu}}
+\affil[1]{Department of Computer Science, \LaTeX\ University}
+\affil[2]{Department of Mechanical Engineering, \LaTeX\ University}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In this work the method to create a manuscript will be demonstrated.
+ The use of Unibeam, combined with pdflatex and bibtex, under Linux will be used to create a manuscript. 
+\end{abstract}
+
+
+\section{Introduction}
+This is the introduction of the manuscript.
+The first citation will be given here.\cite{spartrekus2324898}
+There second citation will be here.\cite{spartrekus2324897}
+
+\section{Description}
+There are several templates for Ph.d. thesis, which are available in the 
+reference Spartrekus~\cite{spartrekus2324898}.
+It describes 11 examples of Ph.d. thesis templates. The first templates 
+are very basic and it allows make a less complex manuscript.
+The example 05 gives a cover with a picture of the university.
+The examples, numbered with more than ex.6, are more complex and 
+they give a beautiful looking.
+
+The most difficult part is probably the references which need to be 
+formatted in order appearance. 
+There is a nice example from Spartrekus~\cite{spartrekus2324897}.
+This example gives a Makefile, which allows to automatically bring
+the manuscript in form, and to display it using mupdf. 
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{freesoft.jpg}
+\end{center}
+
+\section{Conclusion}
+It allowed to easily create a manuscript and to make use of a bib file, which contains references.
+
+\bibliography{mybib}{}
+\bibliographystyle{ieeetr}
+
+\end{document}
+ 
+
